@@ -96,18 +96,21 @@
 
 
 
-  <meta name="description" content="Oracle杭州培训记录,做了十个小lab">
+  <meta name="description" content="2019年5月8号至5月9号两天有幸参加了甲骨文杭州的培训,针对本次培训,通过本文进行记录。">
 <meta name="keywords" content="培训">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle培训记录">
 <meta property="og:url" content="http://www.saiqima.com/2019/05/08/oracle培训/index.html">
 <meta property="og:site_name" content="沙琪玛的博客">
-<meta property="og:description" content="Oracle杭州培训记录,做了十个小lab">
+<meta property="og:description" content="2019年5月8号至5月9号两天有幸参加了甲骨文杭州的培训,针对本次培训,通过本文进行记录。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-08T07:03:45.135Z">
+<meta property="og:image" content="http://www.saiqima.com/2019/05/08/oracle培训/source.saiqima.com/w8222.jpg">
+<meta property="og:image" content="http://www.saiqima.com/2019/05/08/oracle培训/source.saiqima.com/oracle_20190508154401.png">
+<meta property="og:updated_time" content="2019-05-08T15:21:27.726Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle培训记录">
-<meta name="twitter:description" content="Oracle杭州培训记录,做了十个小lab">
+<meta name="twitter:description" content="2019年5月8号至5月9号两天有幸参加了甲骨文杭州的培训,针对本次培训,通过本文进行记录。">
+<meta name="twitter:image" content="http://www.saiqima.com/2019/05/08/oracle培训/source.saiqima.com/w8222.jpg">
 
 
 
@@ -265,7 +268,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">2</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">3</span></a>
 
   </li>
         
@@ -284,7 +287,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
 
   </li>
         
@@ -303,7 +306,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">11</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">12</span></a>
 
   </li>
 
@@ -398,7 +401,7 @@
                 
               
 
-              <time title="创建时间：2019-05-08 09:30:00 / 修改时间：15:03:45" itemprop="dateCreated datePublished" datetime="2019-05-08T09:30:00+08:00">2019-05-08</time>
+              <time title="创建时间：2019-05-08 09:30:00 / 修改时间：23:21:27" itemprop="dateCreated datePublished" datetime="2019-05-08T09:30:00+08:00">2019-05-08</time>
             
 
             
@@ -480,7 +483,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">447</span>
+                <span title="本文字数">1.1k</span>
               
 
               
@@ -514,37 +517,61 @@
       
 
       
-        <p><em>Oracle杭州培训记录,做了十个小lab</em></p>
+        <p><em>2019年5月8号至5月9号两天有幸参加了甲骨文杭州的培训,针对本次培训,通过本文进行记录。</em><br><img src="http:source.saiqima.com/w8222.jpg" alt></p>
 <a id="more"></a>
+<h1 id="两天培训"><a href="#两天培训" class="headerlink" title="两天培训"></a>两天培训</h1><h2 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h2><ul>
+<li>ADW介绍以及使用(主要是数据导入)</li>
+<li>ADW服务于SasS PaaS IaaS</li>
+<li>Exadata + oracle database + oracle cloud 实现”自治数据库”(包括:ADW(国内主推) or ATP</li>
+<li>OAC介绍以及使用</li>
+<li><a href="https://www.oracle.com/solutions/business-analytics/data-visualization/library-overview.html" target="_blank" rel="noopener">OAC学习网站</a></li>
+<li><a href="https://docs.oracle.com/en/" target="_blank" rel="noopener">oracle文档网站</a>  <h2 id="第二天"><a href="#第二天" class="headerlink" title="第二天"></a>第二天</h2></li>
+</ul>
+<h1 id="十个小实验"><a href="#十个小实验" class="headerlink" title="十个小实验"></a>十个小实验</h1><h2 id="实验一"><a href="#实验一" class="headerlink" title="实验一"></a>实验一</h2><ul>
+<li>创建oracle自治仓库云(ADWC)(即Autonomous Data Warehouse Cloud)实例,通过sql developer桌面客户端连接ADWC(通过console生成的wallet进行安全连接):<ol>
+<li>登录oracle cloud控制台,选择Autonomous Data Warehouse,按照流程创建ADW</li>
+<li>点击上一步创建的ADWC实例,选择”Service console”;在新页面上点击”Administration”,点击”Download Client Credentials”下载wallet文件(不需要解压)</li>
+<li>打开sql developer桌面版,连接创建的ADWC(需选择wallet文件进行安全验证)<h2 id="实验二"><a href="#实验二" class="headerlink" title="实验二"></a>实验二</h2></li>
+</ol>
+</li>
+<li><p>比较ADWC三种数据模式各个应用场景和效率:</p>
 <ul>
-<li>SasS PaaS IaaS </li>
-<li><p>Exadata + oracle database + oracle cloud 实现“自治数据库”(包括:ADW(国内主推) or ATP)</p>
-<p>小实验:</p>
-<ul>
-<li>lab1: 创建oracle自治仓库云(ADWC)实例,通过sql developer桌面客户端连接ADWC(通过console生成的wallet进行安全连接)</li>
-<li>lab2: 比较ADWC三种数据模式各个应用场景和效率:<ul>
 <li>medium </li>
 <li>low </li>
 <li>high</li>
 </ul>
 </li>
-<li>lab3: ADWC数据加载: <ol>
+<li><p>具体区别见图:<br><img src="http:source.saiqima.com/oracle_20190508154401.png" alt></p>
+<h2 id="实验三"><a href="#实验三" class="headerlink" title="实验三"></a>实验三</h2></li>
+<li>ADWC数据加载,加载数据至ADWC:<ul>
 <li>从本地文件导入数据</li>
-<li>从OCI对象存储导入数据<ul>
+<li>从OCI对象存储导入数据<ol>
 <li>上传文件至OCI对象存储中</li>
-<li>使用 PL / SQL 包 DBMS_CLOUD 加载数据,进行故障排除</li>
-</ul>
-</li>
+<li>使用 PL / SQL 包 DBMS_CLOUD 加载数据,进行故障排除<h2 id="实验四"><a href="#实验四" class="headerlink" title="实验四"></a>实验四</h2></li>
 </ol>
 </li>
-<li>lab4: <ul>
+</ul>
+</li>
+<li>外部数据与ADWC相关:<ul>
 <li>查询外部数据(从oracle云对象存储中)</li>
-<li>从外部数据导入表(和lab3不一样的是,lab3需要提前创建表结构,这里是根据外部数据自行设置外部表,创建表结构,导入数据)</li>
+<li>从外部数据导入表(和lab3不一样的是,lab3需要提前创建表结构,这里是根据外部数据自行设置外部表,创建表结构,导入数据)<h2 id="实验五"><a href="#实验五" class="headerlink" title="实验五"></a>实验五</h2></li>
 </ul>
 </li>
-</ul>
+<li>创建OAC(Oracle Analytics Cloud):<ol>
+<li>进入我的仪表盘</li>
+<li>选择”分析”,创建一个OAC实例</li>
+<li>OAC有三个版本，每个版本各自有不同特性。<h2 id="实验六"><a href="#实验六" class="headerlink" title="实验六"></a>实验六</h2></li>
+</ol>
 </li>
-<li>lab5: </li>
+<li>将ADW与OAC连接,将ADW数据导入到OAC中进行数据分析,在OAC面板中:<ol>
+<li>创建连接(与ADW连接)</li>
+<li>创建数据集(从ADW选择需要用到的数据构建数据集)</li>
+<li>修改数据类型(属性/度量)让数据在不同维度下展示</li>
+<li>选择合适的数据集构建项目</li>
+<li>按照需求构建图表进行分析服务业务</li>
+<li>导出为分享链接/本地dvd文件通过桌面dvd软件进行本地的图标构建数据分析</li>
+</ol>
+</li>
 </ul>
 
       
@@ -606,8 +633,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/07/2019年5月7日_今日总结/" rel="next" title="2019年5月7日_今日总结">
-                <i class="fa fa-chevron-left"></i> 2019年5月7日_今日总结
+              <a href="/2019/05/08/2019年5月8日_今日总结/" rel="next" title="2019年5月8日_今日总结">
+                <i class="fa fa-chevron-left"></i> 2019年5月8日_今日总结
               </a>
             
           </div>
@@ -662,8 +689,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -680,7 +716,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -701,7 +737,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -722,7 +760,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -807,6 +847,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#两天培训"><span class="nav-number">1.</span> <span class="nav-text">两天培训</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一天"><span class="nav-number">1.1.</span> <span class="nav-text">第一天</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二天"><span class="nav-number">1.2.</span> <span class="nav-text">第二天</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十个小实验"><span class="nav-number">2.</span> <span class="nav-text">十个小实验</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实验一"><span class="nav-number">2.1.</span> <span class="nav-text">实验一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验二"><span class="nav-number">2.2.</span> <span class="nav-text">实验二</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验三"><span class="nav-number">2.3.</span> <span class="nav-text">实验三</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验四"><span class="nav-number">2.4.</span> <span class="nav-text">实验四</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验五"><span class="nav-number">2.5.</span> <span class="nav-text">实验五</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验六"><span class="nav-number">2.6.</span> <span class="nav-text">实验六</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
