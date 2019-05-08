@@ -106,7 +106,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://source.saiqima.com/w8222.jpg">
 <meta property="og:image" content="http://source.saiqima.com/oracle_20190508154401.png">
-<meta property="og:updated_time" content="2019-05-08T15:29:54.698Z">
+<meta property="og:updated_time" content="2019-05-08T15:37:45.489Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle培训记录">
 <meta name="twitter:description" content="2019年5月8号至5月9号两天有幸参加了甲骨文杭州的培训,针对本次培训,通过本文进行记录。">
@@ -401,7 +401,7 @@
                 
               
 
-              <time title="创建时间：2019-05-08 09:30:00 / 修改时间：23:29:54" itemprop="dateCreated datePublished" datetime="2019-05-08T09:30:00+08:00">2019-05-08</time>
+              <time title="创建时间：2019-05-08 09:30:00 / 修改时间：23:37:45" itemprop="dateCreated datePublished" datetime="2019-05-08T09:30:00+08:00">2019-05-08</time>
             
 
             
@@ -530,9 +530,11 @@
 <li>创建oracle自治仓库云(ADWC)(即Autonomous Data Warehouse Cloud)实例,通过sql developer桌面客户端连接ADWC(通过console生成的wallet进行安全连接):<ol>
 <li>登录oracle cloud控制台,选择Autonomous Data Warehouse,按照流程创建ADW</li>
 <li>点击上一步创建的ADWC实例,选择”Service console”;在新页面上点击”Administration”,点击”Download Client Credentials”下载wallet文件(不需要解压)</li>
-<li>打开sql developer桌面版,连接创建的ADWC(需选择wallet文件进行安全验证)<h2 id="实验二"><a href="#实验二" class="headerlink" title="实验二"></a>实验二</h2></li>
+<li>打开sql developer桌面版,连接创建的ADWC(需选择wallet文件进行安全验证)</li>
 </ol>
 </li>
+</ul>
+<h2 id="实验二"><a href="#实验二" class="headerlink" title="实验二"></a>实验二</h2><ul>
 <li><p>比较ADWC三种数据模式各个应用场景和效率:</p>
 <ul>
 <li>medium </li>
@@ -541,27 +543,35 @@
 </ul>
 </li>
 <li><p>具体区别见图:<br><img src="http://source.saiqima.com/oracle_20190508154401.png" alt></p>
-<h2 id="实验三"><a href="#实验三" class="headerlink" title="实验三"></a>实验三</h2></li>
+</li>
+</ul>
+<h2 id="实验三"><a href="#实验三" class="headerlink" title="实验三"></a>实验三</h2><ul>
 <li>ADWC数据加载,加载数据至ADWC:<ul>
 <li>从本地文件导入数据</li>
 <li>从OCI对象存储导入数据<ol>
 <li>上传文件至OCI对象存储中</li>
-<li>使用 PL / SQL 包 DBMS_CLOUD 加载数据,进行故障排除<h2 id="实验四"><a href="#实验四" class="headerlink" title="实验四"></a>实验四</h2></li>
+<li>使用 PL / SQL 包 DBMS_CLOUD 加载数据,进行故障排除</li>
 </ol>
 </li>
 </ul>
 </li>
+</ul>
+<h2 id="实验四"><a href="#实验四" class="headerlink" title="实验四"></a>实验四</h2><ul>
 <li>外部数据与ADWC相关:<ul>
 <li>查询外部数据(从oracle云对象存储中)</li>
-<li>从外部数据导入表(和lab3不一样的是,lab3需要提前创建表结构,这里是根据外部数据自行设置外部表,创建表结构,导入数据)<h2 id="实验五"><a href="#实验五" class="headerlink" title="实验五"></a>实验五</h2></li>
+<li>从外部数据导入表(和lab3不一样的是,lab3需要提前创建表结构,这里是根据外部数据自行设置外部表,创建表结构,导入数据)</li>
 </ul>
 </li>
+</ul>
+<h2 id="实验五"><a href="#实验五" class="headerlink" title="实验五"></a>实验五</h2><ul>
 <li>创建OAC(Oracle Analytics Cloud):<ol>
 <li>进入我的仪表盘</li>
 <li>选择”分析”,创建一个OAC实例</li>
-<li>OAC有三个版本，每个版本各自有不同特性。<h2 id="实验六"><a href="#实验六" class="headerlink" title="实验六"></a>实验六</h2></li>
+<li>OAC有三个版本，每个版本各自有不同特性。</li>
 </ol>
 </li>
+</ul>
+<h2 id="实验六"><a href="#实验六" class="headerlink" title="实验六"></a>实验六</h2><ul>
 <li>将ADW与OAC连接,将ADW数据导入到OAC中进行数据分析,在OAC面板中:<ol>
 <li>创建连接(与ADW连接)</li>
 <li>创建数据集(从ADW选择需要用到的数据构建数据集)</li>
