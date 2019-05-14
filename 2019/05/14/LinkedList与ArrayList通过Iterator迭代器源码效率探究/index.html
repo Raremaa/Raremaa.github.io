@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="沙琪玛的博客">
 <meta property="og:description" content="前言先来点废话，最近发现每日总结效益太低，不适合博文，因此以后不写每日总结，多写一些干货和学习记录，个人感觉这样更适合我。最近在学习《数据结构与算法分析-java语言描述》这本书，书的3.3.4小节探索对于remove()方法而言ArrayList和LinkedList的区别">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-14T06:36:31.054Z">
+<meta property="og:updated_time" content="2019-05-14T06:47:03.167Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LinkedList与ArrayList通过Iterator迭代器源码效率探究">
 <meta name="twitter:description" content="前言先来点废话，最近发现每日总结效益太低，不适合博文，因此以后不写每日总结，多写一些干货和学习记录，个人感觉这样更适合我。最近在学习《数据结构与算法分析-java语言描述》这本书，书的3.3.4小节探索对于remove()方法而言ArrayList和LinkedList的区别">
@@ -398,7 +398,7 @@
                 
               
 
-              <time title="创建时间：2019-05-14 00:00:00 / 修改时间：14:36:31" itemprop="dateCreated datePublished" datetime="2019-05-14T00:00:00+08:00">2019-05-14</time>
+              <time title="创建时间：2019-05-14 00:00:00 / 修改时间：14:47:03" itemprop="dateCreated datePublished" datetime="2019-05-14T00:00:00+08:00">2019-05-14</time>
             
 
             
@@ -1124,6 +1124,46 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
   
 
 
