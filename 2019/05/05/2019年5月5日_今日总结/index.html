@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="沙琪玛的博客">
 <meta property="og:description" content="五一放假归来，把需求开发都补一补">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-08T05:22:47.956Z">
+<meta property="og:updated_time" content="2019-06-12T00:51:17.367Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019年5月5日_今日总结">
 <meta name="twitter:description" content="五一放假归来，把需求开发都补一补">
@@ -265,7 +265,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">6</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">7</span></a>
 
   </li>
         
@@ -284,7 +284,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">4</span></a>
 
   </li>
         
@@ -303,7 +303,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">15</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">17</span></a>
 
   </li>
 
@@ -415,7 +415,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-08 13:22:47" itemprop="dateModified" datetime="2019-05-08T13:22:47+08:00">2019-05-08</time>
+                <time title="修改时间：2019-06-12 08:51:17" itemprop="dateModified" datetime="2019-06-12T08:51:17+08:00">2019-06-12</time>
               
             
           </span>
@@ -481,7 +481,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">714</span>
+                <span title="本文字数">736</span>
               
 
               
@@ -527,10 +527,10 @@
 </ol>
 <p>发现这个其实非常的偶然，公司遇到一个一次性添加1W+条数据的需求，本地实测时间需要5分钟（数据库不在本地）。后来我通过DruidStat的sql检测功能，发现有一条SELECT LAST_INSERT_ID()重复执行了2分多钟，效率很低。<br>所以就上网查了一下资料，原来公司获得主键的方式一直用的第二种方式（逆向工程中如此）。改为了第一种方式后效率显著提升。推荐用第一种方式。</p>
 <ul>
-<li>解决SpringMvc接收Date类型参数格式转化以及时间差8小时的方案：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@JsonFormat(pattern=&quot;yyyy-MM-dd HH:mm:ss&quot;, timezone=&quot;GMT+8&quot;)@DateTimeFormat(pattern=&quot;yyyy-MM-dd HH:mm:ss&quot;)</span><br></pre></td></tr></table></figure>
+<li>解决SpringMvc接收Date类型参数格式转化以及时间差8小时的方案：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@JsonFormat(pattern=&quot;yyyy-MM-dd HH:mm:ss&quot;, timezone=&quot;GMT+8&quot;)//出参格式化</span><br><span class="line">@DateTimeFormat(pattern=&quot;yyyy-MM-dd HH:mm:ss&quot;)//入参格式化</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>这样就可以通过前端/app就可以通过 yyyy-MM-dd HH:mm:ss 的格式进行传值赋给Date类型，并且不存在8小时问题。</p>
+<p>这样就可以通过前端/app就可以通过 yyyy-MM-dd HH:mm:ss 的格式进行传值赋给Date类型，并且不存在8小时问题。<br>详情见:<a href="https://blog.csdn.net/zhou520yue520/article/details/81348926" target="_blank" rel="noopener">参考资料</a></p>
 
       
     </div>
@@ -669,7 +669,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -692,7 +692,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -721,7 +723,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
