@@ -96,19 +96,20 @@
 
 
 
-  <meta name="description" content="title: Mysql树形结构(表内自关联)设计与查询遍历方式date: 2019-05-17tags: [Mysql]categories: Mysql 这篇博文来讨论一下在mysql中运用树形结构进行设计，并进行查询的方式">
+  <meta name="description" content="这篇博文来讨论一下在mysql中运用树形结构进行设计，并进行查询的方式">
+<meta name="keywords" content="Mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="沙琪玛的博客">
+<meta property="og:title" content="Mysql树形结构(表内自关联)设计与查询遍历方式">
 <meta property="og:url" content="http://www.saiqima.com/2019/05/17/Mysql树形结构(表内自关联)设计与查询遍历方式/index.html">
 <meta property="og:site_name" content="沙琪玛的博客">
-<meta property="og:description" content="title: Mysql树形结构(表内自关联)设计与查询遍历方式date: 2019-05-17tags: [Mysql]categories: Mysql 这篇博文来讨论一下在mysql中运用树形结构进行设计，并进行查询的方式">
+<meta property="og:description" content="这篇博文来讨论一下在mysql中运用树形结构进行设计，并进行查询的方式">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://source.saiqima.com/20190517105708.png">
 <meta property="og:image" content="http://source.saiqima.com/20190530_1.jpg">
-<meta property="og:updated_time" content="2019-05-30T15:54:06.513Z">
+<meta property="og:updated_time" content="2019-06-12T06:17:54.453Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="沙琪玛的博客">
-<meta name="twitter:description" content="title: Mysql树形结构(表内自关联)设计与查询遍历方式date: 2019-05-17tags: [Mysql]categories: Mysql 这篇博文来讨论一下在mysql中运用树形结构进行设计，并进行查询的方式">
+<meta name="twitter:title" content="Mysql树形结构(表内自关联)设计与查询遍历方式">
+<meta name="twitter:description" content="这篇博文来讨论一下在mysql中运用树形结构进行设计，并进行查询的方式">
 <meta name="twitter:image" content="http://source.saiqima.com/20190517105708.png">
 
 
@@ -127,7 +128,7 @@
   };
 </script>
 
-  <title> | 沙琪玛的博客</title>
+  <title>Mysql树形结构(表内自关联)设计与查询遍历方式 | 沙琪玛的博客</title>
   
 
 
@@ -267,7 +268,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">7</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">8</span></a>
 
   </li>
         
@@ -286,7 +287,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">4</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">5</span></a>
 
   </li>
         
@@ -374,7 +375,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">Mysql树形结构(表内自关联)设计与查询遍历方式
 
               
             
@@ -400,7 +401,7 @@
                 
               
 
-              <time title="创建时间：2019-05-17 10:45:06" itemprop="dateCreated datePublished" datetime="2019-05-17T10:45:06+08:00">2019-05-17</time>
+              <time title="创建时间：2019-05-17 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-17T00:00:00+08:00">2019-05-17</time>
             
 
             
@@ -417,11 +418,29 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-30 23:54:06" itemprop="dateModified" datetime="2019-05-30T23:54:06+08:00">2019-05-30</time>
+                <time title="修改时间：2019-06-12 14:17:54" itemprop="dateModified" datetime="2019-06-12T14:17:54+08:00">2019-06-12</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Mysql/" itemprop="url" rel="index"><span itemprop="name">Mysql</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -465,7 +484,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.7k</span>
+                <span title="本文字数">1.6k</span>
               
 
               
@@ -479,7 +498,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -499,8 +518,7 @@
       
 
       
-        <p>title: Mysql树形结构(表内自关联)设计与查询遍历方式<br>date: 2019-05-17<br>tags: [Mysql]<br>categories: Mysql</p>
-<p><em>这篇博文来讨论一下在mysql中运用树形结构进行设计，并进行查询的方式</em><br><a id="more"></a></p>
+        <p><em>这篇博文来讨论一下在mysql中运用树形结构进行设计，并进行查询的方式</em><br><a id="more"></a></p>
 <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>最近在做公司的一个工业相关的项目，其中有一个需求，做一个BOM(Bill of Material 物料清单)的实现。关于BOM这里不做过多解释，大家自行百度，我这里遇到的问题是在描述产品结构时，我这里的产品由不定数量子产品组成，而每一个子产品又有不定数量子产品组成，依次类推，如下图所示:<br><img src="http://source.saiqima.com/20190517105708.png" alt><br>至此我们可以看出，我们需要一个:<br><strong>树状结构的库的设计，并且这个树的子节点数量未知</strong></p>
 <h1 id="设计数据库"><a href="#设计数据库" class="headerlink" title="设计数据库"></a>设计数据库</h1><p>经过上面的分析，下面我们来设计这个数据库，我这里采用表内自关联的方式:</p>
 <h2 id="首先我们看一下表结构"><a href="#首先我们看一下表结构" class="headerlink" title="首先我们看一下表结构"></a>首先我们看一下表结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; desc product;</span><br><span class="line">+-----------+--------------+------+-----+---------+----------------+</span><br><span class="line">| Field     | Type         | Null | Key | Default | Extra          |</span><br><span class="line">+-----------+--------------+------+-----+---------+----------------+</span><br><span class="line">| id        | bigint(20)   | NO   | PRI | NULL    | auto_increment |</span><br><span class="line">| parent_id | bigint(20)   | YES  |     | NULL    |                |</span><br><span class="line">| name      | varchar(255) | YES  |     | NULL    |                |</span><br><span class="line">+-----------+--------------+------+-----+---------+----------------+</span><br><span class="line">3 rows in set (0.00 sec)</span><br></pre></td></tr></table></figure>
@@ -555,7 +573,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://www.saiqima.com/2019/05/17/Mysql树形结构(表内自关联)设计与查询遍历方式/">http://www.saiqima.com/2019/05/17/Mysql树形结构(表内自关联)设计与查询遍历方式/</a>
+    <a href="http://www.saiqima.com/2019/05/17/Mysql树形结构(表内自关联)设计与查询遍历方式/" title="Mysql树形结构(表内自关联)设计与查询遍历方式">http://www.saiqima.com/2019/05/17/Mysql树形结构(表内自关联)设计与查询遍历方式/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -566,6 +584,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Mysql/" rel="tag"># Mysql</a>
+          
+        </div>
+      
 
       
       
@@ -575,8 +599,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/14/oracle培训小结/" rel="next" title="Oracle培训总结">
-                <i class="fa fa-chevron-left"></i> Oracle培训总结
+              <a href="/2019/05/14/LinkedList与ArrayList通过Iterator迭代器源码效率探究/" rel="next" title="LinkedList与ArrayList通过Iterator迭代器源码效率探究">
+                <i class="fa fa-chevron-left"></i> LinkedList与ArrayList通过Iterator迭代器源码效率探究
               </a>
             
           </div>
@@ -687,7 +711,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -718,7 +744,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
